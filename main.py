@@ -1,18 +1,18 @@
 from datetime import date
 
 # import classes from other files
-from StartEngine import StartEngine
 from ElectricWindow import ElectricWindow
+from StartEngine import StartEngine
 from Person import Person
 from SeatBelt import SeatBelt
 
 
 # order of class imports are important
 # in start engine the sequence is SeatBelt => Person
-class Car(StartEngine, SeatBelt, Person):
+class Car(StartEngine, SeatBelt, Person, ElectricWindow):
     def __init__(self, brand, model, production_year, seats):
-        StartEngine.__init__(self)
         ElectricWindow.__init__(self)  # get attributes from ElectricWindow class
+        StartEngine.__init__(self)
         Person.__init__(self)  # get attributes from Person class
         SeatBelt.__init__(self)  # get attributes from SeatBelt class
 
@@ -30,6 +30,7 @@ class Car(StartEngine, SeatBelt, Person):
 car1 = Car('opel', 'astra', 2018, 5)
 car1.use_seat(front_left=True)
 car1.use_seat_belt(front_left=True)
+
 
 car1.start_engine()
 

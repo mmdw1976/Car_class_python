@@ -9,13 +9,29 @@
     <li>More features are coming soon</li>
 </ol>
 
-<h3>Guide</h3>
+<h2>Guide</h2>
+
+<h3>Creating a new car-object</h3>
+
 <p>
-You can add a new car by doing the following command:</p>
-<p>
-<code>car1 = Car('opel', 'astra', 2018, 5)</code>
+You can add a new car by doing the following command:
 </p>
+
+<code>car1 = Car('opel', 'astra', 2018, 5)</code>
+
+<h3>Attributes and methods</h3>
 <p>
 When you create a car-object you have to provide a:<br>
 brand, model, production_year and the amount of seats the car have.
 </p>
+
+<p>
+You can use the following attributes:<br>
+</p>
+<code>.brand, .model, .production_year, .seats, .windows, .persons, .seat_belts</code>
+
+
+<p>
+You can use the following methods:
+</p>
+<code>To be continued.</code>

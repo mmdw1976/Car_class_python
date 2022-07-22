@@ -13,7 +13,7 @@
 <p>
 You can add a new car by doing the following command:</p>
 <p>
-<code>car1 = Car('opel', 'astra', 2018, 5)</code>. <br>
+<code>car1 = Car('opel', 'astra', 2018, 5)</code>
 </p>
 <p>
 When you create a car-object you have to provide a:<br>

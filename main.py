@@ -8,13 +8,19 @@ from SeatBelt import SeatBelt
 
 
 # order of class imports are important
-# in start engine the sequence is SeatBelt => Person
-class Car(StartEngine, SeatBelt, Person, ElectricWindow):
+# in StartEngine the sequence is SeatBelt => Person
+
+# MRO explanation
+# StartEngine class inherit SeatBelt and Person in that order!
+# we must obtain the order that is specified in the parent class that will execute the function
+# Order is therefore SeatBelt => SeatBelt => Person
+# ElectricWindow is not depending on other classes therefore placement is not that important
+class Car(ElectricWindow, StartEngine, SeatBelt, Person):
     def __init__(self, brand, model, production_year, seats):
         ElectricWindow.__init__(self)  # get attributes from ElectricWindow class
         StartEngine.__init__(self)
-        Person.__init__(self)  # get attributes from Person class
         SeatBelt.__init__(self)  # get attributes from SeatBelt class
+        Person.__init__(self)  # get attributes from Person class
 
         self.brand = brand
         self.model = model
@@ -33,6 +39,11 @@ car1.use_seat_belt(front_left=True)
 
 
 car1.start_engine()
+
+
+car1.move_window('front_left', 40)
+
+print(Car.__mro__)
 
 
 

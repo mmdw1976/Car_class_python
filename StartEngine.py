@@ -7,7 +7,6 @@ class StartEngine(SeatBelt, Person):
         SeatBelt.__init__(self)
         Person.__init__(self)
 
-
     def start_engine(self):
         """
                 1. Check persons in car

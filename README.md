@@ -20,6 +20,7 @@ You can add a new car by doing the following command:
 <code>car1 = Car('opel', 'astra', 2018, 5)</code>
 
 <h3>Attributes and methods</h3>
+<h4>Attributes</h4>
 <p>
 When you create a car-object you have to provide a:<br>
 brand, model, production_year and the amount of seats the car have.
@@ -30,7 +31,7 @@ You can use the following attributes:<br>
 </p>
 <code>.brand, .model, .production_year, .seats, .windows, .persons, .seat_belts</code>
 
-
+<h4>Methods</h4>
 <p>
 You can use the following methods:
 </p>
